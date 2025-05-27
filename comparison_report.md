@@ -14,11 +14,21 @@ Enter the text you want to process (e.g., a movie review):
 💬 Gemini's Zero-Shot Response:
 Without any actual content in the movie review, it's impossible to classify the sentiment. "Movie review" is just a label. I need the actual text of the review to determine if it's positive, negative, or neutral.
 
+
+--- Zero-Shot Prompting ---
+
+✨ Sending prompt to Gemini...
+------------------------------------
+📜 Prompt: "Classify the sentiment of this movie review: 'Prompt Enginear'"
+------------------------------------
+💬 Gemini's Zero-Shot Response:
+Without any actual content in the Prompt Enginear, it's impossible to classify the sentiment. "Prompt Enginear" is just a label. I need the actual text of the review to determine if it's positive, negative, or neutral.
+
 --- Few-Shot Prompting ---
 
 ✨ Sending prompt to Gemini...
 ------------------------------------
-📜 Prompt: "Classify the sentiment of this movie review:
+📜 Prompt: "Classify the sentiment of this movie review: 'The movie was an absolute masterpiece, thrilling from start to finish!'
 
 Review: 'The movie was an absolute masterpiece, thrilling from start to finish!'
 Sentiment: Positive
@@ -35,6 +45,28 @@ Sentiment:"
 
 💬 Gemini's Few-Shot Response:
 Sentiment: **Neutral**
+
+--- Few-Shot Prompting with a twist ---
+
+✨ Sending prompt to Gemini...
+------------------------------------
+📜 Prompt: "Classify the sentiment of this movie review: 'The movie was an absolute masterpiece, thrilling from start to finish!'
+
+Review: 'The movie was an absolute masterpiece, thrilling from start to finish!'
+Sentiment: Positive
+
+Review: 'I really wanted to like this film, but it was slow and predictable.'
+Sentiment: Negative
+
+Review: 'It was an okay movie, not great but not terrible either.'
+Sentiment: Neutral
+
+Review: 'Oh the movie was great, if you are looking for a lullaby'
+Sentiment:"
+------------------------------------
+
+💬 Gemini's Few-Shot Response:
+Sentiment: **Negative**
 
 --- Chain-of-Thought Prompting ---
 
